@@ -28,9 +28,9 @@ immobulus. Inflamarae evanesco flagrate quodpot lumos skele-gro expecto
 rictusempra. Immobilus diffindo pepperup leviosa scintillation.
 Wingardium mobilarbus immobilus legilimens imperio aresto.
 
-![Learning curve for Boost over Credit Default](Boost_credit_default_LC.png){#fig:Boost_credit_default_LC-large}
+![Learning curve for Boost over Credit Default](images/Boost_credit_default_LC.png){#fig:Boost_credit_default_LC-large}
 
-![Learning curve for Boost over Credit Default but smaller](Boost_credit_default_LC.png){#fig:Boost_credit_default_LC width=30%}
+![Learning curve for Boost over Credit Default but smaller](images/Boost_credit_default_LC.png){#fig:Boost_credit_default_LC width=30%}
 
 # Serpensortia Stupefy
 
