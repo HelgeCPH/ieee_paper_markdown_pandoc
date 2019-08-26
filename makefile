@@ -2,11 +2,11 @@ PANDOC = time /usr/local/bin/pandoc
 OUTPUT = build
 
 FLAGS = \
-	-F /usr/local/bin/pandoc-crossref \
+	-F `which pandoc-crossref` \
 	-f markdown \
-	--pdf-engine=/usr/local/bin/pdflatex \
+	--pdf-engine=`which pdflatex` \
 	--filter table-filter.py \
-	--filter=/usr/local/bin/pandoc-citeproc \
+	--filter=`which pandoc-citeproc` \
 	--bibliography=bibliography.bib \
 	--csl=bibliography.csl \
 	-s
