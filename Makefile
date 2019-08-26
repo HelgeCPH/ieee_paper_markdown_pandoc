@@ -24,10 +24,10 @@ all: test1.pdf test2.pdf
 mkdir:
 	@if [ ! -e build ]; then mkdir build; fi
 
-%.pdf : %.md | mkdir
+%.pdf : contents/%.md | mkdir
 	$(PANDOC) -o $(OUTPUT)/$@ $(FLAGS) $(FLAGS_PDF) metadata.yaml $<
 
-%.tex : %.md | mkdir
+%.tex : contents/%.md | mkdir
 	$(PANDOC) -o $(OUTPUT)/$@ $(FLAGS_TEX) $(FLAGS_PDF) metadata.yaml $<
 
 test:

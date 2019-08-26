@@ -15,7 +15,7 @@ finibus ligula eget, scelerisque ante. Nulla facilisi. Aliquam erat
 volutpat. Nam in sapien sapien. Nullam vehicula risus vitae odio
 suscipit, id dignissim turpis convallis [@daniel].
 
-![This is the caption](images/fly.png){#fig:my_figure}
+![This is the caption](contents/images/fly.png){#fig:my_figure}
 
 Non-English or Math|Frequency |Comments
 -------------------|----------|-----------------
