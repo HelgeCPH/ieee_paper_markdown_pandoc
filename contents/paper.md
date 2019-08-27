@@ -1,6 +1,14 @@
-[contents/﻿introduction.md]
-[contents/background.md]
-[contents/conclusion.md]
+---
+include-entry: './contents'
+---
+
+
+!include introduction.md
+
+!include background.md
+
+!include conclusion.md
+
 ﻿
 
 # Acknowledgements

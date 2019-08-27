@@ -11,18 +11,6 @@ template) not supporting 2 column output.
 ## Install MacTeX and Additional Dependencies:
 1. `brew cask install mactex`
 2. `brew install pandoc pandoc-crossref pandoc-citeproc`
-3. `brew install ghc cabal-install`
-
-The last dependency is needed to install `pandoc-include` as there is no homebrew formula for it.
-
-```bash
-brew install ghc cabal-install
-cabal update
-cabal install pandoc-include
-```
-
-Find the documentation of `pandoc-include` [here](https://github.com/steindani/pandoc-include).
-
 
 # Python Environment
 
@@ -45,6 +33,14 @@ install make`). You'll want to ensure the following are in
 * `pdflatex`
 * `pandoc-crossref`
 * `pandoc-citeproc`
+* `pandoc-include`
+
+# Support for markdown include
+
+After writing my script, I found a working Python version of [pandoc-include](https://pypi.org/project/pandoc-include/).  The [original one](https://github.com/steindani/pandoc-include) is abandoned and does not work anymore.
+
+The head of the paper is now always in `contents/paper.md`.
+
 
 # Ready, set, go
 Executing `make` will create 2 pdf files in the `build` directory.
@@ -67,3 +63,4 @@ https://github.com/dgraziotin/acm_sig_paper_markdown_pandoc
 
 Context:
 https://ineed.coffee/4008/how-to-write-an-acm-styled-conference-paper-using-markdownpandoc/
+
