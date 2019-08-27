@@ -1,8 +1,7 @@
-```include
-﻿introduction.md
-background.md
-conclusion.md
-﻿```
+[contents/﻿introduction.md]
+[contents/background.md]
+[contents/conclusion.md]
+﻿
 
 # Acknowledgements
 
