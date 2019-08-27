@@ -5,6 +5,7 @@ FLAGS = \
 	-F `which pandoc-crossref` \
 	-f markdown \
 	--pdf-engine=`which pdflatex` \
+	--filter=`which pandoc-include` \
 	--filter table-filter.py \
 	--filter=`which pandoc-citeproc` \
 	--bibliography=bibliography.bib \
@@ -19,12 +20,12 @@ FLAGS_TEX = \
 
 FLAGS_PDF = --template=template.latex
 
-all: test1.pdf test2.pdf
+all: paper.pdf  # test1.pdf test2.pdf
 
 mkdir:
 	@if [ ! -e build ]; then mkdir build; fi
 
-%.pdf : contents/%.md | mkdir
+%.pdf : contents/paper.md | mkdir
 	$(PANDOC) -o $(OUTPUT)/$@ $(FLAGS) $(FLAGS_PDF) metadata.yaml $<
 
 %.tex : contents/%.md | mkdir
